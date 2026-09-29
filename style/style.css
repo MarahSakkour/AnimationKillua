@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../images/bk.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.parent {
+  position: relative;
+}
+
+.child1-left {
+  height: 200px;
+  width: 100px;
+  /* background-color: aqua; */
+  background-image: url(../images/Killuafromleft.webp);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-name: FirtsAnimation;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 5; */
+}
+
+.child1-right {
+  height: 200px;
+  width: 100px;
+  background-image: url(../images/boardfromright.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.child2-left {
+  height: 200px;
+  width: 100px;
+  background-image: url(../images/boardfromleft.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+
+.child2-right {
+  height: 200px;
+  width: 100px;
+  background-image: url(../images/killuafromright.webp);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 220px;
+  right: 0px;
+  animation-name: SecondAnimation;
+  animation-delay: 7s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 5; */
+}
+
+.child3-left {
+  height: 200px;
+  width: 100px;
+  background-image: url(../images/Killuafromleft.webp);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 440px;
+  left: 0px;
+  animation-name: FirtsAnimation;
+  animation-delay: 12s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 5; */
+}
+
+.child3-right {
+  height: 200px;
+  width: 100px;
+  background-image: url(../images/boardfromright.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 440px;
+  right: 0px;
+}
+
+@keyframes FirtsAnimation {
+  0% {
+  }
+  100% {
+    left: calc(100% - 200px);
+  }
+}
+
+@keyframes SecondAnimation {
+  0% {
+  }
+  100% {
+    right: calc(100% - 200px);
+  }
+}
